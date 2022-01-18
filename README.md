@@ -12,14 +12,14 @@ The dataset used is the [Name of the Dataset](Download link) from (source of dow
 
 If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
 
-Target Variable: SalePrice
+**Target Variable: SalePrice**
 
 Sale Price refers to the selling price of the house.
 Mean Selling Price: 121,000$
 Max Selling Price: 1,000,000$
 Min Selling Price: 45,000$
 
-Model(s) Used
+# Model(s) Used
 This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model):
 
 The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the Convolutional layer. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The Convolutional layer has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images).
@@ -28,5 +28,5 @@ Rectified Linear Unit (ReLU) is the activation layer used in CNNs.The activation
 
 Max Pooling: A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
 
-Future Work
+# Future Work
 Good ideas or strategies that you were not able to implement which you think can help improve performance.
