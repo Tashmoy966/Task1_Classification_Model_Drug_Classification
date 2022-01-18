@@ -1,32 +1,38 @@
 # Problem Statement
-This should be a brief description of the domain of your dataset (e.g. if it is the Titanic Dataset then write about the ship, the incident that happened, what you're trying to do with the data).
+The Drug Classifcation Analysis is used to analyse the effect of a particular drug based on certain paramrters (Age,Sex,BP,Cholesterol,Na_to_K) and finding an effective model which holds a strong relation with the parameters to predict the specific drug consumption index.
 
 # Dataset
-The dataset used is the [Name of the Dataset](Download link) from (source of download e.g Kaggle). If the task is a classification task, then you must specify the number of classes and give a 1 line description of each class as follows(example of Iris Dataset).
+The dataset used is the [Drug Classification With Different Algorithms](https://www.kaggle.com/gorkemgunay/drug-classification-with-different-algorithms/notebook) from Kaggle. 
 
-**The 3 class labels are:**
+**The 6 class labels are:**
 
-1. Iris Setosa: Given iris flower belongs to the Setosa species
-2. Iris Virginica: Given iris flower belongs to the Virginica species
-3. Iris Versicolor: Given iris flower belongs to the Versicolor species
+1. **Age** :Age of the person (int64).
+2. **Sex** :Gender the person holds(object or categorical) (Male or Female).
+3. **Cholesterol** :Fat level of the person (object or categorical) (High or Low or Normal).
+4. **Na_to_K** :Sodium or Potassium content of the body (float64).
+5. **BP** : Blood Pressure of the person (object or categorical) (High or Normal).
 
-If the task is a regression task, then explain the target variable and give brief statistics.(e.g. Housing Prices)
+**Target Variable:**
 
-**Target Variable: SalePrice**
+Drug (object or categorical)
 
-Sale Price refers to the selling price of the house.
-Mean Selling Price: 121,000$
-Max Selling Price: 1,000,000$
-Min Selling Price: 45,000$
+**Drug** refer to the type of drug consumed (through medication or direct injection) 
+
+**Type:**
+
+A,B,C,X,Y
 
 # Model(s) Used
-This needs to be a description of the model used and a brief overview of how it works in theory (e.g taken of a CNN Model):
 
-The network architecture used was a basic CNN model, with Max Pooling and ReLU Activation functions. Input images are resized to an optimal size and then fed into the Convolutional layer. These images are converted to their pixel values, which can be imagined as a three-dimensional matrix for the purpose of visualization. The Convolutional layer has a kernel. This kernel is generally a small matrix of specified kernel size mxnx3 (3 for RGB images).
+1. **KNN Classifier**
 
-Rectified Linear Unit (ReLU) is the activation layer used in CNNs.The activation function is applied to increase non-linearity in the CNN. Images are made of different objects that are not linear to each other.
+In this kernel, parameters of KNN Algorithm are described and effects of these paremeters on result are observed. First prediction is predicted with default parameters and      this   result is used for comparing. After that, best value of every parameters are found and are discussed their effects on result.Finally, GridSearch algorithm is used to find best values of each parameters. So results can be compared each other in the conclusion part.
 
-Max Pooling: A limitation of the feature map output of Convolutional Layers is that they record the precise position of features in the input. This means that small movements in the position of the feature in the input image will result in a different feature map. This can happen with re-cropping, rotation, shifting, and other minor changes to the input image. A common approach to addressing this problem from signal processing is called down sampling. This is where a lower resolution version of an input signal is created that still contains the large or important structural elements, without the fine detail that may not be as useful to the task.
+i) Calculate distance
+ii) Find closest neighbors
+iii)Vote for labels
+
+![image](https://user-images.githubusercontent.com/87931949/149998804-2881e277-abfa-4867-a354-0f40f5b0b13b.png)
 
 # Future Work
 Good ideas or strategies that you were not able to implement which you think can help improve performance.
