@@ -36,6 +36,8 @@ iii)Vote for labels
 
 ![image](https://user-images.githubusercontent.com/87931949/149998804-2881e277-abfa-4867-a354-0f40f5b0b13b.png)
 
+[Refer](https://www.datacamp.com/community/tutorials/k-nearest-neighbor-classification-scikit-learn)
+
 2. **Random Forest**
 
 The Random forest or Random Decision Forest is a supervised Machine learning algorithm used for classification, regression, and other tasks using decision trees.
@@ -44,6 +46,8 @@ The Random forest classifier creates a set of decision trees from a randomly sel
 ![image](https://user-images.githubusercontent.com/87931949/149999578-242ca37e-9877-445e-a104-3c9f3baf9e68.png)
 
 Based on the MSE the entropy of the system is reduced to get the best classification.
+
+[Refer](https://www.upgrad.com/blog/random-forest-classifier/)
 
 3. **SVM Classifier**
 
@@ -56,6 +60,8 @@ i) Generate hyperplanes which segregates the classes in the best way. Left-hand 
 ii) Select the right hyperplane with the maximum segregation from the either nearest data points as shown in the right-hand side figure.
 
 ![image](https://user-images.githubusercontent.com/87931949/150000093-cedb850e-4796-458c-909d-77076f506677.png)
+
+[Refer](https://www.datacamp.com/community/tutorials/svm-classification-scikit-learn-python)
 
 
 # Future Work
